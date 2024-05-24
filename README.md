@@ -1,16 +1,13 @@
-# Roommate-Pairing-ML-Model
-Code repository for a thesis on roommate compatibility using machine learning. It features models and scripts for data preprocessing, personality-based matching, and evaluation, leveraging cosine similarity for predictions.
-
 # Roommate Compatibility Analysis
 
-This repository contains code and data for analyzing and predicting roommate compatibility using machine learning techniques. The project leverages various personal traits, habits, and preferences to assess compatibility between potential roommates.
+This repository contains code and data for analyzing and predicting roommate compatibility using a Cosine Similarity model. The project leverages various personal traits, habits, and preferences to assess compatibility between potential roommates.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Features](#features)
 - [Preprocessing](#preprocessing)
-- [Modeling](#modeling)
+- [Modeling with Cosine Similarity](#modeling-with-cosine-similarity)
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Usage](#usage)
@@ -20,7 +17,7 @@ This repository contains code and data for analyzing and predicting roommate com
 
 ## Project Overview
 
-The aim of this project is to predict the compatibility of potential roommates by analyzing their personal traits, habits, and lifestyle preferences. The analysis involves data preprocessing, feature engineering, model training, and evaluation.
+The aim of this project is to predict the compatibility of potential roommates by analyzing their personal traits, habits, and lifestyle preferences using a Cosine Similarity model. The analysis involves data preprocessing, feature engineering, model training, and evaluation.
 
 ## Dataset
 
@@ -43,25 +40,22 @@ The preprocessing steps include:
 - One-hot encoding of categorical features.
 - Creation of composite scores by averaging related features.
 
-## Modeling
+## Modeling with Cosine Similarity
 
-The project uses a Support Vector Machine (SVM) for classification. The steps include:
-- Splitting the data into training and testing sets.
-- Defining a preprocessing pipeline for numerical and categorical features.
-- Training the SVM model on the processed data.
-- Predicting compatibility scores for the test set.
+This project uses a Cosine Similarity model to assess compatibility. The steps include:
+- Converting feature vectors into a suitable format.
+- Calculating cosine similarity between pairs of vectors.
+- Predicting compatibility based on similarity scores.
 
 ## Evaluation
 
 The model's performance is evaluated using:
-- Accuracy
-- Precision
-- Recall
-- ROC Curve and AUC
+- Similarity Scores
+- Accuracy of predictions based on predefined thresholds
 
 ## Results
 
-The results section highlights the performance of the model in predicting roommate compatibility, including metrics such as accuracy, precision, recall, and the ROC curve.
+The results section highlights the performance of the model in predicting roommate compatibility, including metrics such as similarity scores and accuracy.
 
 ## Usage
 
