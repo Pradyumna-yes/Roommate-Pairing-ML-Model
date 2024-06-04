@@ -41,6 +41,7 @@ The preprocessing steps include:
 - Creation of composite scores by averaging related features.
 
 ## Modeling with Cosine Similarity
+![image](https://github.com/Pradyumna-yes/Roommate-Pairing-ML-Model/assets/96283346/d007f1ca-8a46-4d49-b696-2d9a2d5aeae5)
 
 This project uses a Cosine Similarity model to assess compatibility. The steps include:
 - Converting feature vectors into a suitable format.
